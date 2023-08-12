@@ -442,7 +442,7 @@
         animation: sideBarOpen 0.3s linear 0s 1 normal;
     }
     .main {
-        width: 100%;
+        min-width: 100vw;
         border-radius: 0px;
     }
     .mainDetailsItem {
