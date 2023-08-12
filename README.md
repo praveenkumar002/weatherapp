@@ -7,7 +7,8 @@
 ![Screenshot_20230812_234918_Chrome](https://github.com/praveenkumar002/weatherapp/assets/112431482/b31b6f58-f6f3-4c64-b173-349ea8512989)
 
 
-https://github.com/praveenkumar002/weatherapp/assets/112431482/9a25154a-d0b9-46bb-9283-0a2546a0b08e
+https://github.com/praveenkumar002/weatherapp/assets/112431482/feb83f22-6161-451c-9b0b-e6b4aaff0b5e
+
 
 
 
