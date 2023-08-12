@@ -1,7 +1,14 @@
 
 ![Screenshot (240)](https://github.com/praveenkumar002/weatherapp/assets/112431482/b29563b7-be3e-4d43-9768-eaea12251243)
 
+
+![Screenshot_20230812_235943_Chrome](https://github.com/praveenkumar002/weatherapp/assets/112431482/65a72574-a0e8-443d-878c-216e08daedb3)
+
 ![Screenshot_20230812_234918_Chrome](https://github.com/praveenkumar002/weatherapp/assets/112431482/b31b6f58-f6f3-4c64-b173-349ea8512989)
+
+
+https://github.com/praveenkumar002/weatherapp/assets/112431482/9a25154a-d0b9-46bb-9283-0a2546a0b08e
+
 
 
 
