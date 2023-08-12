@@ -1,0 +1,478 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main-container {
+  margin: 100px 120px;
+  display: flex;
+  background-color: #5c9ce5;
+  border-radius: 40px;
+  box-shadow: 0px 0px 18px 1px rgb(184, 184, 184);
+}
+
+/* ---------------- */
+
+.asside {
+  background-color: #5c9ce5;
+  flex-basis: 25%;
+  border-radius: 40px 0px 0px 40px;
+  color: white;
+  padding: 22px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.asside .assideHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.asside img {
+  width: 10%;
+  cursor: pointer;
+}
+.asside .assideTab {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.asside .assideTab div:nth-child(1) {
+  background-color: white;
+  height: 8px;
+  width: 8px;
+  padding: 0px 8px;
+  border-radius: 6px;
+}
+.asside .assideTab div:nth-child(2),
+.asside .assideTab div:nth-child(3) {
+  background-color: rgba(255, 255, 255, 0.623);
+  height: 8px;
+  width: 8px;
+  border-radius: 6px;
+}
+.asside .headerSwitch {
+  cursor: pointer;
+}
+
+.asside .assideContent {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.asside .assideContent .city {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+.asside .assideContent .city .cityDet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.asside .assideContent .city .cityTime img {
+  width: 18px;
+}
+.asside .assideContent .city .cityTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.asside .assideContent .date {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.asside .assideContent .date .dateTime img {
+  width: 18px;
+}
+.asside .assideContent .date .dateTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assideTemp {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.assideTemp img {
+  width: 32px;
+}
+.assideTemp .assideTempValue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.assideTemp .assideTempValue h1 {
+    font-size: 98px;
+}
+.assideTemp .assideTempValue .assideTempValueType {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* ---------------- */
+
+
+.main {
+  background-color: #e4f1ff;
+  /* height: 80vh; */
+  flex-basis: 75%;
+  border-radius: 40px;
+  padding: 28px;
+}
+
+.main .mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .mainHeader .mainHeaderUserWelcome p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+.main .mainHeader .mainHeaderUserWelcome p:last-child{
+    margin-top: 4px;
+}
+.main .mainHeader .mainHeaderUserProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.main .mainHeader .mainHeaderUserProfile img{
+    width: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main .mainChart {
+    background-color: white;
+    padding: 14px;
+    border-radius: 14px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main .mainChart .mainChartHead {
+    display: flex;
+    justify-content: space-between;
+}
+.main .mainChart .mainChartHead p {
+    font-weight: 600;
+}
+.main .mainChart .mainChartHead .mainChartHeadButtons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.main .mainChart .mainChartHead .mainChartHeadButtons div img {
+    width: 24px;
+}
+.main .mainChart .mainChartHead .mainChartHeadButtons div:first-child,
+.main .mainChart .mainChartHead .mainChartHeadButtons div:last-child {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgb(235, 235, 235);
+}
+.main .mainChart .mainChartHead .mainChartHeadButtons div:last-child {
+    background-color: rgb(204, 204, 204);
+}
+
+.main .mainChart .mainChartDetail {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.main .mainChart .mainChartDetail div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.main .mainChart .mainChartDetail div img {
+    width: 22px;
+}
+.main .mainChart .mainChartDetail div span {
+    background-color: black;
+    height: 88px;
+    width: 1px;
+}
+
+.main .mainDetails {
+    margin-top: 32px;
+}
+.main .mainDetails h4 {
+    margin-bottom: 14px;
+}
+.main .mainDetails .mainDetailsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem{
+    background-color: white;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    /* min-width: 30%; */
+    position: relative;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemTitle{
+    display: flex;
+    justify-content: space-between;
+    gap: 78px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemTitle img{
+    width: 24px;
+    background-color: #5C9CE5;
+    border-radius: 6px;
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemValue{
+    font-size: 32px;
+    font-weight: bold;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemValue span {
+    font-size: 16px;
+    font-weight: normal;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar div div{
+    background-color: #dddddd;
+    padding: 4px 24px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar div p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar .child1 div {
+    background: linear-gradient(to right, #5C9CE5 100%, #5C9CE5 100%);
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar .child2 div{
+    background: linear-gradient(to right, #5C9CE5 100%, #5C9CE5 100%);
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem .mainDetailsItemBar .child3 div {
+    background: linear-gradient(to right, #5C9CE5 50%, #dddddd 50%);
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(2) .mainDetailsItemBar div div{
+    padding: 4px 6px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(2) .mainDetailsItemBar .child2 div {
+    background: linear-gradient(to right, #5C9CE5 70%, #dddddd 30%);
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(2) .mainDetailsItemBar .child3 div {
+    background: linear-gradient(to right, #dddddd 50%, #dddddd 50%);
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(3) .mainDetailsItemBar div div{
+    padding: 4px 10px;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(3) .mainDetailsItemBar .child2 div {
+    background: linear-gradient(to right, #5C9CE5 70%, #dddddd 30%);
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(3) .mainDetailsItemBar .child3 div {
+    background: linear-gradient(to right, #dddddd 50%, #dddddd 50%);
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(4) .mainDetailsItemBar .child1 p {
+    display: flex;
+    /* gap: 100px; */
+    width: 100%;
+    justify-content: space-between;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(4) .mainDetailsItemBar div div{
+    padding: 4px 100px;
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(5) .mainDetailsItemBar .child1 p {
+    display: flex;
+    /* gap: 100px; */
+    width: 100%;
+    justify-content: space-between;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(5) .mainDetailsItemBar div div{
+    padding: 4px 90px;
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(6) .windBarContainer{
+    display: flex;
+    border: 12px solid #5C9CE5;
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(6) .windBarContainer .windBarContainerItem div{
+    height:70%;
+    width: 10px;
+    background-color: #5C9CE5;
+    position: absolute;
+    right: 50%;
+    top: 10px;
+    transform: rotate(-48deg);
+    border-radius:10px/100%;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(6) .clear {
+    height: 40%;
+    width: 150px;
+    bottom: 0;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(1){
+    order: 1;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(2){
+    order: 3;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(3){
+    order: 4;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(4){
+    order: 5;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(5){
+    order: 6;
+}
+.main .mainDetails .mainDetailsContainer .mainDetailsItem:nth-child(6) {
+    order: 2;
+}
+
+
+
+/*  */
+.graphColor {
+    background-color: #5C9CE5;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    transform: skewX(-45deg);
+    top:68%;
+    left: 10.7%;
+    /* opacity: 0.8; */
+}
+.graphColor1 {
+    background-color: #5C9CE5;
+    width: 16%;
+    height: 50px;
+    position: absolute;
+    transform: skewY(-20deg);
+    top:60.7%;
+    left: 26%;
+    /* opacity: 0.8; */
+}
+.graphColor2 {
+    background-color: #5C9CE5;
+    width: 28%;
+    height: 50px;
+    position: absolute;
+    transform: skewX(-45deg);
+    top:68%;
+    left: 61%;
+    /* opacity: 0.8; */
+}
+
+.graphColor3 {
+    background-color: #5C9CE5;
+    width: 47%;
+    height: 50px;
+    position: absolute;
+    /* transform: skewX(-45deg); */
+    top:68%;
+    left: 23%;
+    /* opacity: 0.8; */
+}
+
+
+
+/* nav bar open and close */
+.openSideBar, .closeSideBar {
+    display: none;
+}
+
+
+
+/* ................ */
+@media screen and (max-width:576px) {
+    .main-container {
+        margin: 0px;
+        justify-content: stretch;
+        position: relative;
+    }
+    .asside {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 90vw;
+        justify-content: start;
+        border-radius: 0px;
+        z-index: 1;
+        animation: sideBarOpen 0.3s linear 0s 1 normal;
+    }
+    .main {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .mainDetailsItem {
+        width: 100%;
+    }
+
+    .openSideBar, .closeSideBar {
+        display: block;
+        position: fixed;
+        background-color: #75b5ff9a;
+        padding:20px 0px;   
+        border-radius: 0px 14px 14px 0px;
+        top: 50vh;
+        left: -12px;
+        transform: translateY(-50%);
+    }
+    .closeSideBar {
+        background-color: rgba(0, 0, 0, 0.418);
+        border-radius: 14px 0px 0px 14px;
+        right: 0;
+        left: 80%;
+    }
+
+    @keyframes sideBarOpen {
+        from {opacity: 0; width: 0vw;}
+        to {opacity: 1; width: 90vw;}
+    }
+
+    @keyframes sideBarClose {
+        from {opacity: 1; width: 90vw;}
+        to {opacity: 0; width: 0vw;}
+    }
+}
